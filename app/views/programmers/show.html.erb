@@ -21,7 +21,7 @@
     <p>
     <strong>Quote:</strong>
     <!-- <%= @programmer.quote %> -->
-    <%= render partial: 'programmer'%>
+    <%= render partial: 'attribute', locals: {programmer: @programmer, attribute: 'quote'} %>
     <br>
     </p>
 
