@@ -20,13 +20,12 @@
 
     <p>
     <strong>Quote:</strong>
-    <!-- <%= @programmer.quote %> -->
     <%= render partial: 'attribute', locals: {programmer: @programmer, attribute: 'quote'} %>
     <br>
     </p>
 
     <p>
-    <strong>Claim To Fame:</strong> <%= @programmer.claim_to_fame %>
+    <strong>Claim To Fame:</strong> <%= render partial: 'attribute', locals: {programmer: @programmer, attribute: 'claim_to_fame'} %>
     </p>
 
     <p>
